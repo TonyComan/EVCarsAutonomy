@@ -1,0 +1,36 @@
+﻿<Page x:Class="EVCarsAutonomy.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EVCarsAutonomy"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="HomePage">
+
+    <Grid  Background="#F9F6EE">
+        <!--Titlul HomePage-->
+        <TextBlock Foreground="#525965"
+                   FontFamily="Cascadia Code"   HorizontalAlignment="Center" Margin="0,21,0,0" TextWrapping="Wrap" Text="Proiect" VerticalAlignment="Top" Height="63" Width="152" FontSize="35"/>
+        <!--Logo URA-->
+        <Image Source="C:\PROgramare\ProgrammingVisual Studio\C#\EVCarsAutonomy\Asets\uralogo.png" Margin="398,-19,-6,346" RenderTransformOrigin="0.496,0.548" />
+        <!--Descriere Studenti-->
+        <TextBlock   Foreground="#525965"   FontFamily="Cascadia Code"     HorizontalAlignment="Center" Height="44" Margin="0,133,0,0" TextWrapping="Wrap" Text="Banișor Adrian Ștefan ,Cincu Vlad Adrian si Coman Antonio-Georgian | Grupa 621 |   Anul: 2023-2024(II) | Profesor coordonator: Crișan Daniela Alexandra" VerticalAlignment="Top" Width="467"/>
+        <!--Descriere Aplicatie-->
+        <TextBlock   Foreground="#525965"   FontFamily="Cascadia Code"            HorizontalAlignment="Center" Height="198" Margin="0,225,0,0" TextWrapping="Wrap" Text=" Scopul acestei aplicații este de a oferi utilizatorilor o modalitate simplă și eficientă de a estima autonomia mașinilor electrice, luând în considerare o varietate de factori.Aplicația dispune de o interfață grafică intuitivă, dezvoltată folosind tehnologia WPF, care permite utilizatorilor să introducă ușor datele specifice mașinii electrice.
+                     
+                      Aplicația este într-o fază continuă de dezvoltare , vom avea  îmbunătățiri constante ale algoritmului de calcul pentru a oferi estimări cât mai precise.Această aplicație reprezintă efortul comun și pasiunea noastra pentru tehnologia vehiculelor electrice și dezvoltarea software!" VerticalAlignment="Top" Width="467"/>
+
+
+
+
+
+
+    </Grid>
+
+
+
+
+
+
+</Page>

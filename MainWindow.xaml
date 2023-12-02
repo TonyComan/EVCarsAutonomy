@@ -11,10 +11,15 @@
         WindowStartupLocation="CenterScreen">
 
 
-    <Grid x:Name="___Titlu_"  Background="#F9F6EE">
-
+    <Grid x:Name="_Titlu_"  Background="#F9F6EE">
+        <!--Locul unde se afiseaza Paginile-->
+        <Frame x:Name="AfisareMain" Margin ="235,0,0,0"  NavigationUIVisibility="Hidden"  /> 
+        
+        
+        
+        
         <!--// mesaj fundal //-->
-        <TextBlock Text="Electric Vehicle Range Calculator"
+        <TextBlock x:Name="textjosdreapta"   Text="Electric Vehicle Range Calculator"
                    Foreground="#525965"
                    FontFamily="Cascadia Code"
                    FontSize="15"
@@ -31,15 +36,16 @@
                 Margin="0,0,0,8" />
 
         <!--Titlu-->
-        <TextBlock Text="T R Y   M Y   A P P"
+        <TextBlock  x:Name="trymyappTxt"  Text="T R Y   M Y   A P P"
                    Foreground="#525965"
                    FontFamily="Cascadia Code"
                    FontSize="22"
                    VerticalAlignment="Top"
                    Margin="439,39,0,0" HorizontalAlignment="Left" Width="277" />
+        
         <!-- Imagine dedesubtul textului "TRY MY APP" -->
         <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="460,107,0,0">
-            <Image Source="Asets/masinuta.png" Width="234" Height="208" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" >
+            <Image x:Name="masinutaPoza"    Source="C:\PROgramare\ProgrammingVisual Studio\C#\EVCarsAutonomy\Asets\masinuta.png" Width="234" Height="208" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" >
                 <Image.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -97,7 +103,7 @@
             </Grid>
 
             <!--Meniu Principal-->
-            <Menu Height="450"
+            <Menu Height="328"
                   Background="Transparent"
                   Margin="0,40,0,0">
 
@@ -112,26 +118,28 @@
                 </Menu.ItemsPanel>
 
                 <!--// Main Menu - HOME //-->
-                <MenuItem Header="Home" Foreground="#FFFFFF" FontFamily="Cascadia Code" FontSize="15" Margin="0,13,0,0">
+                
+                <MenuItem Header="Home" Foreground="#FFFFFF" FontFamily="Cascadia Code" FontSize="15" Margin="0,13,0,0" Click="HomeButton_Click">
                     <MenuItem.HeaderTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                                 <!-- Icona pentru "Acasa" -->
-                                <Image Source="Asets/home.png" Width="70" Height="40" Margin="0,0,5,0"/>
+                                <Image Source="C:\PROgramare\ProgrammingVisual Studio\C#\EVCarsAutonomy\Asets\home.png" Width="70" Height="40" Margin="0,0,5,0"/>
                                 <!-- Textul pentru "Acasa" -->
                                 <TextBlock Text="H o m e" VerticalAlignment="Center"/>
                             </StackPanel>
                         </DataTemplate>
                     </MenuItem.HeaderTemplate>
                 </MenuItem>
+                
 
                 <!--// Main Menu - ANALIZA //-->
-                <MenuItem Header="Home" Foreground="#FFFFFF" FontFamily="Cascadia Code" FontSize="15" Margin="0,28,0,0">
+                <MenuItem Header="Analyse" Foreground="#FFFFFF" FontFamily="Cascadia Code" FontSize="15" Margin="0,28,0,0" Click="AnalyseClickBtn">
                     <MenuItem.HeaderTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                                 <!-- Icona pentru "analiza" -->
-                                <Image Source="Asets/calculator.png" Width="70" Height="40" Margin="0,0,5,0"/>
+                                <Image Source="C:\PROgramare\ProgrammingVisual Studio\C#\EVCarsAutonomy\Asets\calculator.png" Width="70" Height="40" Margin="0,0,5,0"/>
                                 <!-- Textul pentru "analiza" -->
                                 <TextBlock Text="A n a l y s e" VerticalAlignment="Center"/>
                             </StackPanel>
@@ -140,12 +148,12 @@
                 </MenuItem>
 
                 <!--// Main Menu - Find Model //-->
-                <MenuItem Header="Home" Foreground="#FFFFFF" FontFamily="Cascadia Code" FontSize="15" Margin="0,26,0,0">
+                <MenuItem Header="Find" Foreground="#FFFFFF" FontFamily="Cascadia Code" FontSize="15" Margin="0,26,0,0" Click="FindClickBtn">
                     <MenuItem.HeaderTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                                 <!-- Icona pentru "Find Model" -->
-                                <Image Source="Asets/search.png" Width="70" Height="40" Margin="0,0,5,0"/>
+                                <Image Source="C:\PROgramare\ProgrammingVisual Studio\C#\EVCarsAutonomy\Asets\search.png" Width="70" Height="40" Margin="0,0,5,0"/>
                                 <!-- Textul pentru "Find Model" -->
                                 <TextBlock Text="F i n d " VerticalAlignment="Center"/>
                             </StackPanel>
@@ -154,12 +162,12 @@
                 </MenuItem>
 
                 <!--// Main Menu - Exit //-->
-                <MenuItem Header="Home" Foreground="#FFFFFF" FontFamily="Cascadia Code" FontSize="15" Margin="0,23,0,0">
+                <MenuItem Header="Exit" Foreground="#FFFFFF" FontFamily="Cascadia Code" FontSize="15" Margin="0,23,0,0" Click="ExitClickBtn">
                     <MenuItem.HeaderTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                                 <!-- Icona pentru "Exit" -->
-                                <Image Source="Asets/exit.png" Width="70" Height="40" Margin="0,0,5,0"/>
+                                <Image Source="C:\PROgramare\ProgrammingVisual Studio\C#\EVCarsAutonomy\Asets\exit.png" Width="70" Height="40" Margin="0,0,5,0"/>
                                 <!-- Textul pentru "Exit" -->
                                 <TextBlock Text="E x i t" VerticalAlignment="Center"/>
                             </StackPanel>
@@ -183,11 +191,12 @@
                 <ControlTemplate TargetType="Button">
                     <Grid>
                         <!-- Iconita pentru Minimize -->
-                        <Image Source="Asets/minimize.png" Width="20" Height="20" />
+                        <Image Source="C:\PROgramare\ProgrammingVisual Studio\C#\EVCarsAutonomy\Asets\minimize.png" Width="20" Height="20" />
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
         </Button>
+        
 
 
 

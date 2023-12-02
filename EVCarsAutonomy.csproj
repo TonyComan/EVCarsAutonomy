@@ -8,12 +8,47 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Asets\battery-removebg.png" />
+    <None Remove="Asets\calculator.png" />
+    <None Remove="Asets\close.png" />
+    <None Remove="Asets\exit.png" />
+    <None Remove="Asets\home.png" />
+    <None Remove="Asets\masinuta.png" />
+    <None Remove="Asets\minimize.png" />
+    <None Remove="Asets\search.png" />
+    <None Remove="Asets\uralogo.png" />
     <None Remove="Fonts\towerofsilence.ttf" />
     <None Remove="Fonts\towerofsilenceital.ttf" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Asets\" />
+    <Content Include="Asets\battery-removebg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Asets\calculator.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Asets\close.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Asets\exit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Asets\home.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Asets\masinuta.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Asets\minimize.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Asets\search.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Asets\uralogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
