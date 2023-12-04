@@ -18,7 +18,7 @@
         <!--Kilometrii-->
         <TextBlock Foreground="#525965"   FontFamily="Cascadia Code"      HorizontalAlignment="Left" Margin="206,204,0,0" TextWrapping="Wrap" Text="Numarul de kilometrii parcursi:" VerticalAlignment="Top" Height="63" Width="295" FontSize="20"/>
         <!--TextBX Model Masina-->
-        <TextBox x:Name="textboxMasinaMarca"  HorizontalAlignment="Left" Height="31" Margin="206,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332"/>
+        <TextBox x:Name="textboxMasinaMarca"  HorizontalAlignment="Left" Height="31" Margin="206,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" TextChanged="textboxMasinaMarca_TextChanged"/>
         <!--TextBX Nr KM-->
         <TextBox x:Name="textboxNrKilometri" HorizontalAlignment="Left" Height="32" Margin="331,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="112"/>
         <Image  Source="C:\PROgramare\ProgrammingVisual Studio\C#\EVCarsAutonomy\Asets\marca si model.png"    HorizontalAlignment="Left" Height="66" Margin="121,84,0,0" VerticalAlignment="Top" Width="57"/>
