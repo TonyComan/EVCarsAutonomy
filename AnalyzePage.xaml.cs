@@ -24,5 +24,10 @@ namespace EVCarsAutonomy
         {
             InitializeComponent();
         }
+
+        private void ClickCalculeazaAutonomie(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

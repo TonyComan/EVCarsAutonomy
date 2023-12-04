@@ -8,7 +8,39 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AnalyzePage">
 
-    <Grid   Margin ="235,0,0,0" Background="#F9F6EE">
-        <TextBlock HorizontalAlignment="Center" Margin="0,104,0,0" TextWrapping="Wrap" Text="AnalyzePage" VerticalAlignment="Top" Height="63" Width="124"/>
+    <Grid    Background="#F9F6EE">
+        <!--Viteza Medie-->
+        <TextBlock       Foreground="#525965"   FontFamily="Cascadia Code"     HorizontalAlignment="Left" Margin="43,62,0,0" TextWrapping="Wrap" Text="Viteza Medie:" VerticalAlignment="Top" Height="26" Width="96"/>
+        <!--TextBX Viteza-->
+        <TextBox x:Name="textboxVitezaMedie" HorizontalAlignment="Left" Height="20" Margin="139,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52"/>
+        <!--Jante-->
+        <TextBlock       Foreground="#525965"   FontFamily="Cascadia Code"     HorizontalAlignment="Left" Margin="246,61,0,0" TextWrapping="Wrap" Text="Jante:" VerticalAlignment="Top" Height="13" Width="49"/>
+        <!--TextBx Jante-->
+        <TextBox x:Name="textbxJante" HorizontalAlignment="Left" Height="20" Margin="295,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52"/>
+        <!--Imagine Roata-->
+        <Image  Source="C:\PROgramare\ProgrammingVisual Studio\C#\EVCarsAutonomy\Asets\roata.png"  HorizontalAlignment="Left" Height="25" Margin="221,57,0,0" VerticalAlignment="Top" Width="34" RenderTransformOrigin="0.473,1.441"/>
+        <!--Imagine Viteza-->
+        <Image Source="C:\PROgramare\ProgrammingVisual Studio\C#\EVCarsAutonomy\Asets\viteza.png"  HorizontalAlignment="Left" Height="27" Margin="16,55,0,0" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.475,0.153"/>
+        <!--Temperatura-->
+        <TextBlock       Foreground="#525965"   FontFamily="Cascadia Code"     HorizontalAlignment="Left" Margin="401,58,0,0" TextWrapping="Wrap" Text="Temperatura:" VerticalAlignment="Top" Height="26" Width="88"/>
+        <!--Imagine Vreme-->
+        <Image Source="C:\PROgramare\ProgrammingVisual Studio\C#\EVCarsAutonomy\Asets\vreme.png"     HorizontalAlignment="Left" Height="26" Margin="373,54,0,0" VerticalAlignment="Top" Width="28" RenderTransformOrigin="1.338,0.282"/>
+        
+        <!--StackPanel Radio Btn-->
+        <StackPanel HorizontalAlignment="Left" Height="62" Margin="482,38,0,0" VerticalAlignment="Top" Width="153">
+            <RadioButton   Foreground="#525965"   FontFamily="Cascadia Code"     Content="Peste 25°C" Height="18" Width="142"/>
+            <RadioButton   Foreground="#525965"   FontFamily="Cascadia Code"     Content="Intre 5°C si 25°C" Height="17" Width="142"/>
+            <RadioButton   Foreground="#525965"   FontFamily="Cascadia Code"     Content="Sub 5°C" Height="17" Width="142"/>
+        </StackPanel>
+        <!--Text Autonomie Medie-->
+        <TextBlock       Foreground="#525965"   FontFamily="Cascadia Code"     HorizontalAlignment="Left" Margin="321,145,0,0" TextWrapping="Wrap" Text="Autonomie Medie" VerticalAlignment="Top" Height="96" Width="376" FontSize="36"/>
+        <!--Button Calculeaza-->
+        <Button x:Name="btnCalculeaza" Foreground="#525965"   FontFamily="Cascadia Code"  Content="Calculeaza"  HorizontalAlignment="Left" Height="48" Margin="30,145,0,0" VerticalAlignment="Top" Width="161" Click="ClickCalculeazaAutonomie"/>
+        <!--Label Preia Numar Autonomie-->
+        <Label x:Name="lblNumarAutonomie"  Foreground="LimeGreen" FontFamily="Cascadia Code"        Content="." HorizontalAlignment="Left" Height="45" Margin="347,225,0,0" VerticalAlignment="Top" Width="182"/>
+
+
+
+
     </Grid>
 </Page>
